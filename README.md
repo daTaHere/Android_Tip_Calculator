@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Tip Time - Solution Code
 =================================
 
@@ -22,3 +23,7 @@ Getting Started
 2. Download the sample.
 3. Import the sample into Android Studio.
 4. Build and run the sample.
+=======
+# Android_Tip_Calculator
+A simple app to calculate the tip amount of a bill
+>>>>>>> origin/main
