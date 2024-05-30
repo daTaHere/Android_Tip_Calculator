@@ -8,6 +8,7 @@ import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performTextInput
+import com.example.tiptime.screens.TipCalculatorScreen
 import com.example.tiptime.ui.theme.TipTimeTheme
 import org.junit.Rule
 import org.junit.Test
@@ -18,13 +19,13 @@ class TipUITests {
     @get:Rule
     val composeTestRule = createComposeRule()
 
-    // test output without rounding up
+    // test UI output without rounding up
     @Test
     fun calculate_20_percent_tip() {
         composeTestRule.setContent {
             TipTimeTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
-                    TipTimeLayout()
+                    TipCalculatorScreen()
                 }
             }
         }
@@ -37,12 +38,13 @@ class TipUITests {
         )
     }
 
+    // test UI output with round up
     @Test
     fun calculate_20_percent_tip_roundUp() {
         composeTestRule.setContent {
             TipTimeTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
-                    TipTimeLayout()
+                    TipCalculatorScreen()
                 }
             }
         }
